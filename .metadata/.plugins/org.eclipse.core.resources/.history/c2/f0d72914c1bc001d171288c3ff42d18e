@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=BIG5"
+    pageEncoding="UTF-8" import="java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OrderBean1</title>
+</head>
+<body>
+<div align="center"></div>
+<h3>Using OrderBeans with JSP</h3>
+<jsp:useBean id="order" class="com.lcpan.bean.OrderBean"></jsp:useBean>
+
+	
+</body>
+</html>

@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=BIG5"
+    pageEncoding="UTF-8" import="java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OrderBean1</title>
+</head>
+<body>
+<div align="center"></div>
+<h3>Using OrderBeans with JSP</h3>
+<jsp:useBean id="order" class="com.lcpan.bean.OrderBean" scope="request"></jsp:useBean>
+<jsp:setProperty property="bookno" name="order"/>
+<jsp:setProperty property="price" name="order"/>
+<jsp:setProperty property="quantity" name="order"/>
+	
+</body>
+</html>

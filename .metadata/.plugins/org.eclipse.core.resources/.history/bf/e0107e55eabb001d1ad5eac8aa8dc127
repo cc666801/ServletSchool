@@ -1,0 +1,11 @@
+package com.lcpan.m06;
+
+import java.nio.file.DirectoryStream.Filter;
+
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpFilter;
+
+@WebFilter("/MyFilter1")
+public class MyFilter1 extends HttpFilter implements Filter{
+	
+}

@@ -1,0 +1,48 @@
+package com.lcpan.m10;
+
+import java.io.IOException;
+import java.sql.*;
+
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/GetEmp")
+public class GetEmp extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	Connection conn;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
+		String sql = "select id, account, pwd from [UserAccount] where id=?";
+		ConnectionFactory connFactory = new ConnectionFactory();
+		try (Connection conn = connFactory.getConnection();) {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, id);
+			ResultSet rs = pstmt.executeQuery();
+			// 移動到cursor1
+			rs.next();
+			// Put cursor1 data to new a User
+			User user = new User();
+			user.setId(rs.getInt(1));
+			user.setAccount(rs.getString(2));
+			user.setPwd(rs.getString(3));
+			return user;
+
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+			System.out.println(e.getErrorCode());
+		}
+		return null;
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+			throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

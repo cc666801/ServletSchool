@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=BIG5"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>
+	<%request.setCharacterEncoding("UTF-8"); %>
+	<%String attName=request.getParameter("attrName"); %>
+	<%if(attName != null && attName.length() > 0) {%>
+	<%String attValue = request.getParameter("attrValue");
+	session.setAttribute(attName, attValue); %>
+	<%}; %>
+	<%response.setContentType("text/html;charset=UTF-8");%>
+	<%Date created = new Date(session.getCreationTime());%>
+	<%Date accessed = new Date(session.getLastAccessedTime()); %>
+	<%="<html><body><h2>Session資訊</h2>" %>
+	<%="ID : " + session.getId() + "<br>" %>
+	<%="Created : " + created + "<br>" %>
+	<% %>
+	
+	
+	
+</h1>
+	
+</body>
+</html>

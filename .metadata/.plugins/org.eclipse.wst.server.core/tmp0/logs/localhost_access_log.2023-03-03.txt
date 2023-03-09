@@ -1,0 +1,11 @@
+127.0.0.1 - - [03/Mar/2023:10:18:15 +0800] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:10:18:15 +0800] "GET /Servlet/GetParam.html HTTP/1.1" 200 338
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:10:18:22 +0800] "GET /Servlet/GetParam?username=aaa&age=123 HTTP/1.1" 200 67
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:10:54:58 +0800] "GET /Servlet/GetParam?username=aaa&age=123 HTTP/1.1" 200 67
+127.0.0.1 - - [03/Mar/2023:14:28:46 +0800] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:14:28:46 +0800] "GET /Servlet/html/m04_UploadOneFile.html HTTP/1.1" 200 307
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:14:29:22 +0800] "POST /Servlet/UploadOneFile HTTP/1.1" 200 -
+127.0.0.1 - - [03/Mar/2023:15:30:08 +0800] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:15:30:09 +0800] "GET /Servlet/html/m04_UploadFiles.html HTTP/1.1" 200 403
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:15:30:15 +0800] "POST /Servlet/UploadFiles HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [03/Mar/2023:15:30:47 +0800] "POST /Servlet/UploadFiles HTTP/1.1" 200 -

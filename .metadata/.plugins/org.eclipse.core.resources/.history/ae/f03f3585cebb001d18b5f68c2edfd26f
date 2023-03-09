@@ -1,0 +1,11 @@
+package com.lcpan.m05;
+
+import java.util.List;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/ListTrainingCenters")
+public class ListTrainingCenters extends HttpServlet {
+
+}

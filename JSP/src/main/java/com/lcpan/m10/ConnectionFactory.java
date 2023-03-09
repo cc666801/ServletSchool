@@ -1,0 +1,16 @@
+package com.lcpan.m10;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class ConnectionFactory {
+	private String url = "jdbc:sqlserver://localhost:1433;databasename=jdbc;encrypt=false";
+	private String user = "Eason1";
+	private String pwd = "1234";
+
+	public Connection getConnection() throws SQLException {
+		return DriverManager.getConnection(url, user, pwd);
+	}
+}
+

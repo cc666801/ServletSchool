@@ -1,0 +1,8 @@
+package com.lcpan.bean;
+
+public class OrderBean {
+	private String bookno;
+	private double price;
+	private int quantity;
+	
+}
