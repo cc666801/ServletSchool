@@ -154,7 +154,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\User\.eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\User\.eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Servlet" path="/Servlet" reloadable="true" source="org.eclipse.jst.jee.server:Servlet"/><Context docBase="C:\Users\User\.eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSP1" path="/JSP1" reloadable="true" source="org.eclipse.jst.jee.server:JSP1"/></Host>
+      <Context docBase="C:\Users\User\.eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\User\.eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Servlet" path="/Servlet" reloadable="true" source="org.eclipse.jst.jee.server:Servlet"/><Context docBase="C:\Users\User\.eclipse\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JSP" path="/JSP" reloadable="true" source="org.eclipse.jst.jee.server:JSP"/></Host>
     </Engine>
   </Service>
 </Server>
